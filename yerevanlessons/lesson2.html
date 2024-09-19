@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2 _ Файлова структура проекту. Знайомство з HTML</title>
+    <link rel="stylesheet" href="css/lesson2.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a title="На головну сторінку" href="index.html">Головна сторінка</a>
+        </li>
+        <li id="some-id-file">
+          <a title="На перший заголовок" href="#some-id-first"
+            >Файлова структура проекту. Знайомство з HTML</a
+          >
+        </li>
+        <li id="id-constrtags">
+          <a title="На заголовок Будівельні теги" href="#some-id-constrtags"
+            >Будівельні теги</a
+          >
+        </li>
+        <li id="id-contenttags">
+          <a title="На заголовок Теги для контенту" href="#some-id-contenttags"
+            >Теги для контенту</a
+          >
+        </li>
+        <li id="id-example">
+          <a
+            title="На ПРИКЛАД ВАЖКОЇ ВКЛАДЕННОСТІ ДЛЯ СПИСКІВ"
+            href="#some-id-list"
+            >ПРИКЛАД ВАЖКОЇ ВКЛАДЕННОСТІ ДЛЯ СПИСКІВ</a
+          >
+        </li>
+        <li id="id-often-attributes">
+          <a href="#some-id-often-attributes">ЧАСТІ АТРИБУТИ</a>
+        </li>
+        <li id="some-id-unic-menu">
+          <a title="На унікальний ідентіфікатор" href="#some-id-unic"
+            >ID - унікальний ідентифікатор</a
+          >
+        </li>
+        <li id="some-id-block-line-menu">
+          <a
+            title="На БЛОЧНІ, РЯДКОВІ, БЛОЧНО-РЯДКОВІ ТЕГИ"
+            href="#some-id-block-line"
+            >БЛОЧНІ, РЯДКОВІ, БЛОЧНО-РЯДКОВІ ТЕГИ</a
+          >
+        </li>
+        <li title="Донизу" id="some-id-up">
+          <a href="#some-id-down">Донизу</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <h1 id="some-id-first">
+        <a title="На меню" href="#some-id-file"
+          >Файлова структура проекту. Знайомство з HTML</a
+        >
+      </h1>
+      <div>
+        <h2 id="some-id-constrtags">
+          <a title="На меню" href="#id-constrtags">Будівельні теги</a>
+        </h2>
+        <p>Будівельні теги не змінюють контент.</p>
+        <p>
+          <!--<div></div>-->
+          Без конкретного призначення
+        </p>
+        <p>
+          <!--<header></header>-->
+          Для побудови верхньої частини сайту. За потребою може бути не один на
+          сторінці
+        </p>
+        <p>
+          <!--<main></main>-->
+          Для побудови головної сторінки сайту. Тільки один на сторінці
+        </p>
+        <p>
+          <!--<footer></footer>-->
+          Для побудови нижньої частини сайту. За потребою може бути не один на
+          сторінці
+        </p>
+      </div>
+      <div>
+        <h2 id="some-id-contenttags">
+          <a title="На меню" href="#id-contenttags">Теги для контенту</a>
+        </h2>
+        <div>
+          <h3>H1-H6 - теги для заголовка. (Із зачиняючим елементом)</h3>
+          <!--<h1-h6></h1-h6>-->
+          <!--<h1>Головний заголовок. Тільки один на сторінці</h1>-->
+          <h2>Другорядний. Може бути, скільки треба</h2>
+          <h3>Другорядний. Може бути, скільки треба</h3>
+          <h4>Другорядний. Може бути, скільки треба</h4>
+          <h5>Другорядний. Може бути, скільки треба</h5>
+          <h6>Другорядний. Може бути, скільки треба</h6>
+        </div>
+        <div>
+          <h3>P - для побудови параграфу. (Із зачиняючим елементом)</h3>
+          <p>
+            1 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+            dolor delectus, temporibus beatae, soluta, voluptatum saepe rem eum
+            incidunt velit similique est. Quod natus animi eligendi tempora
+            assumenda suscipit eius.
+          </p>
+          <p>
+            2 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+            dolor delectus, temporibus beatae, soluta, voluptatum saepe rem eum
+            incidunt velit similique est. Quod natus animi eligendi tempora
+            assumenda suscipit eius.
+          </p>
+        </div>
+        <div>
+          <h3>MARK, SPAN - виділення слів. (Із зачиняючим елементом)</h3>
+          <p>
+            Тег MARK - маркує наш текст (жовтий колір). <br />
+            Впливає на доступність для людей з обмеженими можливостями. <br />
+            Текст обгорнутий в MARK за допомогою особливого пристрою допоможе
+            споживати контент на сайті (в голосовому режимі)
+          </p>
+          <p>
+            Тег SPAN - виділяє потрібний нам текст за допомогою CSS-властивостей
+          </p>
+          <p>
+            Lorem <mark>ipsum dolor</mark>, sit amet consectetur adipisicing
+            elit. Rerum dolor delectus, temporibus beatae, soluta, voluptatum
+            saepe rem <span>eum incidunt velit similique</span> est. Quod natus
+            animi eligendi tempora assumenda suscipit eius.
+          </p>
+        </div>
+        <div>
+          <h3>
+            BR (brake) - перериває рядок тексту. (Без зачиняючого елемента)
+          </h3>
+          <p>
+            Lorem ipsum dolor <br />
+            sit amet, consectetur adipisicing elit. Enim at maiores odio
+            voluptates. Vel excepturi dicta recusandae minus quo amet pariatur
+            eius corrupti? <br />
+            Adipisci fugiat repudiandae suscipit odit consectetur doloremque
+            beatae non ratione nostrum eos ut repellat, reiciendis commodi sed
+            rerum. <br />
+            Cupiditate praesentium non veniam consectetur quasi doloremque ullam
+            consequatur.
+          </p>
+        </div>
+        <div>
+          <h3>UL, OL. LI - . (Із зачиняючим елементом)</h3>
+          <h4>UL. LI - Маркований список (оболонка, пункт)</h4>
+          <ul>
+            <li>Пункт1</li>
+            <li>Пункт2</li>
+          </ul>
+          <h4>OL. LI - Нумерований список (оболонка, пункт)</h4>
+          <ol>
+            <li>Пункт1</li>
+            <li>Пункт2</li>
+          </ol>
+        </div>
+        <div>
+          <h3>IMG - вивід зображення. (Без зачиняючого елемента)</h3>
+          <img title="honey" src="img/honey.jpg" alt="honey" />
+          <!--alt - альтернативний текст (для людей з обмеженими можливостями)-->
+          <!--src(source) - похідник (шлях до зображення) -->
+        </div>
+        <div>
+          <h3>A - тег гіпертекстового посилання (із зачиняючим елементом)</h3>
+          <p>Завдяки тегу А з'явився HTML - мова гіпертекстового посилання</p>
+          <a target="_blank" title="На сайт Google" href="https://google.com"
+            >Google</a
+          >
+          <!--href - адреса, куди ми маємо потрапити-->
+        </div>
+      </div>
+      <div>
+        <h2
+          title="На ПРИКЛАД ВАЖКОЇ ВКЛАДЕННОСТІ ДЛЯ СПИСКІВ"
+          id="some-id-list"
+        >
+          <a title="На меню" href="#id-example"
+            >ПРИКЛАД ВАЖКОЇ ВКЛАДЕННОСТІ ДЛЯ СПИСКІВ</a
+          >
+        </h2>
+        <ul>
+          <li>
+            Пункт списку
+            <ul>
+              <li>ПідПункт списку</li>
+              <li>
+                ПідПункт списку
+                <ol>
+                  <li>ПідПідПункт списку</li>
+                  <li>ПідПідПункт списку</li>
+                  <li>ПідПідПункт списку</li>
+                </ol>
+              </li>
+              <li>ПідПункт списку</li>
+              <li>ПідПункт списку</li>
+            </ul>
+          </li>
+          <li>Пункт списку</li>
+          <li>Пункт списку</li>
+          <li>Пункт списку</li>
+          <li>Пункт списку</li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="some-id-often-attributes">
+          <a title="На меню" href="#id-often-attributes">ЧАСТІ АТРИБУТИ</a>
+        </h2>
+        <div>
+          <h4>Атрибут target="_blank" - відкриє сайт в новій вкладці</h4>
+        </div>
+        <div>
+          <h4>Атрибут class</h4>
+          <!-- 
+				CLASS - додає або один, або безліч класів
+				Ім'я класу пишемо: латиницею
+				в нижньому регістрі
+				пробіл замінюємо на дефіс
+				
+				До одного атрибуту class можемо додавати безліч класів через пробіл
+				-->
+          <div class="block">BLOCK</div>
+          <div class="block big-block">BLOCK BIG-BLOCK</div>
+          <header class="header">HEADER</header>
+          <img src="img/honey.jpg" alt="honey" class="image" />
+        </div>
+        <div>
+          <h4>Атрибут title - підказка</h4>
+          <a target="_blank" title="На сайт Google" href="https://google.com"
+            >Google</a
+          >
+        </div>
+        <div>
+          <h4 id="some-id-unic">
+            <a href="#some-id-unic-menu">ID - унікальний ідентифікатор</a>
+          </h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur voluptate facilis aspernatur quas iure magni rem debitis
+            impedit delectus, reiciendis nostrum, vero obcaecati ipsam modi
+            molestias? Excepturi dignissimos amet aperiam?
+          </p>
+        </div>
+      </div>
+      <!-- 02.20.00 -->
+      <div>
+        <h2 id="some-id-block-line">
+          <a title="На меню" href="#some-id-block-line-menu"
+            >БЛОЧНІ, РЯДКОВІ, БЛОЧНО-РЯДКОВІ ТЕГИ</a
+          >
+        </h2>
+        <div>
+          <h3>Блочні теги</h3>
+          <p>
+            Усі - будівельні теги: div, header, footer, main... - контентні
+            теги: h1-h6, p, ul, ol, li..
+          </p>
+          <p>
+            Ширина блочного тегу завжди займає ВСЮ ширину батьківського
+            елементу. <br />
+            Блочний тег завжди починається з нового рядка. <br />
+            Висота формується контентом всередині. <br />
+            Ширина формується БАТЬКІВСЬКИМИ РОЗМІРАМИ
+          </p>
+          <div>Привіт</div>
+          <mark>Привіт</mark>
+          <mark>Знову привіт</mark>
+          <div>Привіт</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At error
+            numquam, molestiae voluptatem iure excepturi natus libero doloremque
+            reiciendis labore mollitia perspiciatis corrupti debitis, saepe
+            <span>recusandae nam</span>, consectetur optio sunt!
+          </p>
+          <!-- І тег Р і тег span = рядкові. Тому вони розташовуються в один рядок один за одним -->
+        </div>
+        <div>
+          <h3>Рядкові теги</h3>
+          <p>mark, span, a, br...</p>
+          <p>
+            Рядковий тег займає ширину контенту. <br />
+            Якщо декілька, то вони будуть намагатись вистраюватись один за
+            одним.<br />
+            Висота формується контентом всередині. <br />
+            Ширина формується КОНТЕНТОМ
+          </p>
+        </div>
+        <h3>Блочно-рядкові теги</h3>
+        <p>img</p>
+        <p>
+          Ширина блочно-рядкового тегу займає ширину по ширині контенту
+          всередині. <br />
+          Блочно-рядковий тег намагається розміститись в рядок з іншими
+          рядковими тегами або текстом. (Як у рядковоту тегу). <br />
+          Висота формується по контенту всередині.
+        </p>
+        <div>
+          Text before<img class="image" src="img/honey.jpg" alt="honey" /><span
+            >Text after</span
+          >
+        </div>
+      </div>
+      <!-- Це тимчасово -->
+      <div>
+        <p>
+          1 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          2 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          3 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          4 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          5 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          6 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          7 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          8 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          9 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+        <p>
+          10 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+          quae. Quos cum necessitatibus quis dolor perspiciatis fuga architecto
+          doloremque repellat ut, suscipit, ipsam non nulla facilis aliquam
+          delectus inventore veritatis?
+        </p>
+      </div>
+      <!-- Це тимчасово -->
+    </main>
+    <footer>
+      <ul>
+        <li>1</li>
+        <li title="Доверху" id="some-id-down">
+          <a href="#some-id-up">Доверху</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
